@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Todo MVC</title>
+    
+</head>
+
+<body onload="onInit()">
+    <div class="main-container">
+        <h1>Todo MVC</h1>
+
+        <form onsubmit="onAddTodo(event)">
+            <input type="text" name="todo-txt" placeholder="What todo?" />
+            <input type="number" name="todo-importance" placeholder="Importance?" min="1" max="3" />
+            <button class="btn add">Add</button>
+        </form>
+
+        <section class="todo-filter">
+                <button class="all" onclick="onSetFilter(this)">All</button>
+                <button class="check" onclick="onSetFilter(this)">Done</button>
+                <button class="txt" onclick="onSetFilter(this)">Text</button>
+                <button class="created" onclick="onSetFilter(this)">Created</button>
+                <button class="importance" onclick="onSetFilter(this)">Importance</button>
+        </section>
+
+        <ul class="todo-list">
+        </ul>
+
+
+        <section class="todo-stat">
+            <h4>Total todos: <span class="total-todos"></span> </h4>
+            <h4>Active todos: <span class="active-todos"></span> </h4>
+        </section>
+    </div>
+
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/todo-service.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(317deg, rgba(34, 193, 195, 1) 0%, rgba(170, 76, 251, 1) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+h1,
+.todo-stat{
+    color: rgb(106, 77, 185);
+}
+
+.main-container {
+    background-color: rgba(245, 245, 245, 0.329);
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-width: 500px;
+    min-height: 50vh;
+    justify-content: space-between;
+    margin: auto;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.done {
+    text-decoration: line-through;
+    transform: scale(98%);
+    opacity: .6;
+}
+
+.todo-filter {
+    background-color: rgba(224, 255, 255, 0.281);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.todo-stat {
+    background-color: rgba(224, 255, 255, 0.281);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.todo-stat span {
+    font-size: 1.25em;
+}
+
+form {
+    margin-top: .75em;
+}
+
+input {
+    padding: 0.375rem 0.75rem;
+    width: 25%;
+    height: 1.5em;
+    border-radius: 5px;
+    border: lightslategray 1.5px solid;
+}
+
+button {
+    box-sizing: border-box;
+    font-weight: 400;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.add {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.delete {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    margin-left: .5rem;
+}
+
+ul {
+    padding: 0;
+    min-height: 11em;
+}
+
+li {
+    display: flex;
+    text-align: left;
+    list-style: none;
+    background-color: whitesmoke;
+    margin: .4em;
+    padding: .4em;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+li span {
+    flex-grow: 2;
+}
+
+li button {
+    height: 33px;
+    width: 33px;
+}
+
+.order {
+    color: #fff;
+    background-color: #a6b3c0;
+    border-color: #97a5b1;
+    margin: 0 .1em;
+}
+
+.hide {
+    display: none;
+}
+
+.todo-filter button {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(106, 77, 185);
+}
+
+.selected {
+    border-color: rgb(177, 148, 255);
+}
