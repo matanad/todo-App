@@ -28,8 +28,9 @@ function renderTodos() {
 
 function onAddTodo(ev) {
     ev.preventDefault()
+    // debugger
     const elTxt = document.querySelector('input[name="todo-txt"]')
-    const elImp = document.querySelector('input[name="todo-importance"]').classList.remove
+    const elImp = document.querySelector('input[name="todo-importance"]')
     const txt = elTxt.value
     const imp = +elImp.value
     addTodo(txt, imp)
